@@ -18,6 +18,21 @@ const Header = () => {
     const navMenu2 = document.querySelector(".nav-menu-hide2");
     navMenu2.style.display = "none";
   }
+
+  // 아래는 스크롤에 따라 내려가면 카테고리 변화하는 코드
+  window.onscroll = function () {
+    const header = document.querySelector(".header");
+    let headerHeight = header.offsetHeight;
+    const category2 = document.querySelector(".fixed2");
+    let windowTop = window.scrollY;
+    if (windowTop >= headerHeight) {
+      category2.classList.add("drop");
+      category2.style.display = "block";
+    } else {
+      category2.classList.remove("drop");
+      category2.style.display = "none";
+    }
+  };
   return (
     <header className="header" id="header">
       <div className="fixed2">
