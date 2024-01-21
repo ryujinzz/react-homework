@@ -4,7 +4,7 @@ import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 
 createRoot(document.querySelector("main")).render(
-  <div>
+  <>
     <Header />
     <div className="login">
       <span>로그인</span>
@@ -32,5 +32,5 @@ createRoot(document.querySelector("main")).render(
       </div>
     </div>
     <Footer />
-  </div>
+  </>
 );
