@@ -33,6 +33,11 @@ const Header = () => {
       category2.style.display = "none";
     }
   };
+  //맨 위에 있는 보라색 쿠폰 사라지게 하는 함수
+  function closeAd() {
+    const ad = document.querySelector(".header-ad");
+    ad.style.display = "none";
+  }
   return (
     <header className="header" id="header">
       <div className="fixed2">
@@ -321,7 +326,7 @@ const Header = () => {
               <b>100원</b>에 받아가세요!
             </span>
           </a>
-          <button className="header-ad-btn" type="button">
+          <button className="header-ad-btn" type="button" onClick={closeAd}>
             <img src="/images/header/x-button.png" alt="창닫기" />
           </button>
         </div>
