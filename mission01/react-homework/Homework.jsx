@@ -6,7 +6,7 @@ import Footer from "./components/footer/footer";
 createRoot(document.querySelector("main")).render(
   <div>
     <Header />
-    <div class="login">
+    <div className="login">
       <span>로그인</span>
       <form>
         <label htmlFor="email"></label>
