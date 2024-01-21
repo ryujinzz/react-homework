@@ -2,13 +2,33 @@ import React from "https://esm.sh/react";
 import { createRoot } from "https://esm.sh/react-dom";
 
 const Header = () => {
+  function showNavMenu() {
+    const navMenu = document.querySelector(".nav-menu-hide1");
+    navMenu.style.display = "block";
+  }
+  function closeNavMenu() {
+    const navMenu = document.querySelector(".nav-menu-hide1");
+    navMenu.style.display = "none";
+  }
+  function showNavMenu2() {
+    const navMenu2 = document.querySelector(".nav-menu-hide2");
+    navMenu2.style.display = "block";
+  }
+  function closeNavMenu2() {
+    const navMenu2 = document.querySelector(".nav-menu-hide2");
+    navMenu2.style.display = "none";
+  }
   return (
     <header className="header" id="header">
       <div className="fixed2">
         <div className="navigation2">
           <nav>
             <div className="nav-menu2">
-              <div className="nav-capture2">
+              <div
+                className="nav-capture2"
+                onMouseOver={showNavMenu2}
+                onMouseOut={closeNavMenu2}
+              >
                 <ul className="nav-menu-ul2">
                   <li className="nav-category2">
                     <img
@@ -396,7 +416,11 @@ const Header = () => {
         <div className="navigation">
           <nav>
             <div className="nav-menu">
-              <div className="nav-capture">
+              <div
+                className="nav-capture"
+                onMouseOver={showNavMenu}
+                onMouseOut={closeNavMenu}
+              >
                 <ul className="nav-menu-ul">
                   <li className="nav-category">
                     <img
