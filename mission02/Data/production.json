@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "id": "contact-cksd",
+      "product-name": "[리치몬드 과자점] 소시지 패스트리",
+      "price": "4900원"
+    },
+    {
+      "id": "contact-kdti",
+      "product-name": "[온더바디] 죠르디 시카 노세범 선팩트",
+      "price": "12900원"
+    },
+    {
+      "id": "contact-ekdu",
+      "product-name": "[프로쉬] 베이비 세탁&섬유유연제 3종 (택1)",
+      "price": "16930원"
+    }
+  ]
+}
