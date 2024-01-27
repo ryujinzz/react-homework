@@ -1,0 +1,16 @@
+ul{
+  display: flex;
+  gap: 50px;
+  padding: 0;
+  margin: 50px 0;
+}
+li{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 150px;
+}
+figure{
+  margin: 0;
+}
